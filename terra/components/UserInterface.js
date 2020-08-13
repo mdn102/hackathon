@@ -4,14 +4,17 @@ import Router from 'next/router';
 import Link from 'next/link';
 
 const userInterface = () => {
-  const [imageLink, setImageLink] = useState('/img/earth.jpg');
+  const [imageLink, setImageLink] = useState('/img/welcomebox.png');
   const [currentIndex, setCurrentIndex] = useState(0);
   const imageArray = [
-    '/img/beach-00.png',
+    // '/img/beach-00.png',
     '/img/beach-01.png',
-    '/img/shark-00.png',
-    '/img/shark-01.png',
-    '/img/shark-02.png',
+    // '/img/shark-00.png',
+    // '/img/shark-01.png',
+    // '/img/shark-02.png',
+    '/img/shark-1.png',
+    '/img/shark-2.png',
+    '/img/shark-3.png',
     '/img/seastar-00.png',
     '/img/seastar-01.png',
     '/img/seastar-02.png',
@@ -21,22 +24,17 @@ const userInterface = () => {
     '/img/bottle-00.png',
     '/img/bottle-01.png',
     '/img/bottle-02.png',
+    '/img/bottle-03.png',
     '/img/seaturtle-00.png',
     '/img/seaturtle-01.png',
     '/img/seaturtle-02.png',
     '/img/seaturtle-03.png',
+    '/img/goodbyebox.png',
   ];
 
   const imageClick = (e) => {
     e.preventDefault();
-    if (currentIndex > imageArray.length) {
-      console.log(currentIndex > imageArray.length);
-      setCurrentIndex(0);
-      setImageLink(imageArray[0]);
-    } else {
-      setImageLink(imageArray[currentIndex]);
-      console.log(currentIndex);
-    }
+    setImageLink(imageArray[0]);
   };
 
   const incrementImage = (e) => {
@@ -66,10 +64,6 @@ const userInterface = () => {
     <div>
       <div className="center">
         <h2 className="jumbo-title">Where would you like to go?</h2>
-<<<<<<< HEAD
-=======
-        <h5><Link href="/" passHref><a>Home</a></Link></h5>
->>>>>>> Minh-branch
         <div className="layout-container">
           <Row>
             <Col>
@@ -83,7 +77,7 @@ const userInterface = () => {
                 <div>
                   <button
                     className="img-btn"
-                    onClick={() => Router.push('/city')}
+                    onClick={(e) => imageClick(e)}
                   >
                     <img src="/img/city/city.png" />
                   </button>
@@ -92,7 +86,7 @@ const userInterface = () => {
                 <div>
                   <button
                     className="img-btn"
-                    onClick={() => Router.push('/desert')}
+                    onClick={(e) => imageClick(e)}
                   >
                     <img src="/img/desert/desert.png" />
                   </button>
@@ -116,7 +110,7 @@ const userInterface = () => {
                 <div>
                   <button
                     className="img-btn"
-                    onClick={() => Router.push('/jungle')}
+                    onClick={(e) => imageClick(e)}
                   >
                     <img src="/img/jungle/jungle.png" />
                   </button>
@@ -125,7 +119,7 @@ const userInterface = () => {
                 <div>
                   <button
                     className="img-btn"
-                    onClick={() => Router.push('/ocean')}
+                    onClick={(e) => imageClick(e)}
                   >
                     <img src="/img/ocean/ocean.png" />
                   </button>
@@ -134,7 +128,7 @@ const userInterface = () => {
                 <div>
                   <button
                     className="img-btn"
-                    onClick={() => Router.push('/forest')}
+                    onClick={(e) => imageClick(e)}
                   >
                     <img src="/img/forest/forest.png" />
                   </button>
@@ -171,7 +165,7 @@ const userInterface = () => {
             height: 800px;
           }
           .jumbo {
-            height: 800px;
+            height: 750px;
             width: 1100px;
             display: flex;
             align-items: center;
@@ -199,11 +193,6 @@ const userInterface = () => {
 
           .button-set {
             margin: auto;
-<<<<<<< HEAD
-            margin-top: 45px;
-=======
-            margin-top: 20px;
->>>>>>> Minh-branch
             max-width: 600px;
           }
         `}</style>
