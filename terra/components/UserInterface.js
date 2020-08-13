@@ -4,7 +4,7 @@ import Router from 'next/router';
 import Link from 'next/link';
 
 const userInterface = () => {
-  const [imageLink, setImageLink] = useState('/img/earth.jpg');
+  const [imageLink, setImageLink] = useState('/img/TerraLogo.png');
   const [currentIndex, setCurrentIndex] = useState(0);
   const imageArray = [
     '/img/beach-00.png',
@@ -65,6 +65,7 @@ const userInterface = () => {
   return (
     <div>
       <div className="center">
+        <br />
         <h2 className="jumbo-title">Where would you like to go?</h2>
         <h5><Link href="/" passHref><a>Home</a></Link></h5>
         <div className="layout-container">
@@ -196,11 +197,7 @@ const userInterface = () => {
 
           .button-set {
             margin: auto;
-<<<<<<< HEAD
             margin-top: 45px;
-=======
-            margin-top: 20px;
->>>>>>> Minh-branch
             max-width: 600px;
           }
         `}</style>
