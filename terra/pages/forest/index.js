@@ -4,7 +4,7 @@ import { Container, Row, Col, Jumbotron, Button } from 'react-bootstrap';
 import Router from 'next/router';
 import Carousel from 'react-bootstrap/Carousel';
 
-const cityPage = () => {
+const mountainsPage = () => {
   return (
     <div className="center">
       <br />
@@ -32,7 +32,7 @@ const cityPage = () => {
             <Jumbotron>
               <div className="jumbo">
                 <div className="jumbo-content">
-                  <h1>You are in the City</h1>
+                  <h1>You are in the Forest</h1>
                   <Carousel>
                     <Carousel.Item>
                       <img
@@ -119,4 +119,4 @@ const cityPage = () => {
 };
 
 
-export default cityPage
+export default mountainsPage
