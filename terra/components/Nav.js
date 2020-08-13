@@ -15,12 +15,12 @@ const nav = () => {
         <Row>
           <Col>
             <Navbar bg="light" expand="lg">
-              <Navbar.Brand href="/"> TERRA</Navbar.Brand>
+            <Navbar.Brand href="/"><img src="/img/TerraLogo.png" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
                     <Link href="/about" passHref><Nav.Link>About</Nav.Link></Link>
-                    <Link href="/about" passHref><Nav.Link>Resources</Nav.Link></Link>
+                    <Link href="/resources" passHref><Nav.Link>Resources</Nav.Link></Link>
                     <Link href="/about" passHref><Nav.Link>Donate</Nav.Link></Link>
                   </Nav>
                 </Navbar.Collapse>
@@ -28,6 +28,19 @@ const nav = () => {
           </Col>
         </Row>
       </Container>
+      <style jsx>{`
+
+        .nav {
+          background-color: #f8f7ed;
+          font: Fugaz One;
+        } 
+
+        img {
+          with: 3em;
+          height: 3em;
+        }
+
+      `}</style>
     </div>
   );
 };
