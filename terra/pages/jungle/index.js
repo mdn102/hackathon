@@ -5,7 +5,7 @@ import Router from 'next/router';
 import Carousel from 'react-bootstrap/Carousel';
 import Link from 'next/link';
 
-const beachPage = () => {
+const mountainsPage = () => {
   return (
     <div className="center">
       <br />
@@ -15,7 +15,7 @@ const beachPage = () => {
       <div className="layout-container">
         <Row>
           <Col>
-            <div>
+          <div>
               <button onClick={() => Router.push('/beach')}><img src="/img/beach/beach.png" /></button>
               <p>Beach</p>
             </div>
@@ -34,7 +34,7 @@ const beachPage = () => {
             <Jumbotron>
               <div className="jumbo">
                 <div className="jumbo-content">
-                  <h1>You are on the Beach</h1>
+                  <h1>You are in the Jungle</h1>
                   <Carousel>
                     <Carousel.Item>
                       <img
@@ -77,7 +77,7 @@ const beachPage = () => {
             </Jumbotron>
           </Col>
           <Col>
-            <div>
+          <div>
               <button onClick={() => Router.push('/jungle')}><img src="/img/jungle/jungle.png" /></button>
               <p>Jungle</p>
             </div>
@@ -121,4 +121,4 @@ const beachPage = () => {
 };
 
 
-export default beachPage
+export default mountainsPage
