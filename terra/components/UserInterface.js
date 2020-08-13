@@ -151,6 +151,7 @@ const userInterface = () => {
         <style jsx>{`
           .center {
             text-align: center;
+            background-color: #95ac98;
           }
           .jumbo-title {
           }
