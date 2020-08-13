@@ -1,17 +1,16 @@
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from '../../components/Nav';
-const resources = () => {
+const donate = () => {
   return (
-    <div className="resource-pg">
+    <div className="donate-pg">
       <Nav />
       <Container>
         <div className="container">
           <br />
-          <h1 className="resources-title">Resources</h1>
+          <h1 className="donate-title">Donate</h1>
           <br />
-          <p>California State Parks Foundation is the only statewide independent nonprofit organization dedicated to protecting, enhancing and advocating for California's magnificent state parks. They have volunteer opportunities through their Park Champions program.</p>
-          <a href="http://sfbaywatertrail.org/get-involved/volunteer/" target="__blank"><Button variant="primary">Volunteer in SF Bay Area</Button></a>
+          <p>these are pages you can get resources on environment/donate to causes that support this</p>
         </div>
       </Container>
         <style jsx>{`
@@ -24,16 +23,16 @@ const resources = () => {
           .container {
             text-align: center;
           }
-          .resource-pg {
+          .donate-title {
+            font-family: 'Fugaz One', cursive;;
+          }
+          .donate-pg {
             background-color: #95ac98;
             width: 100vw;
             height: 100vh;
-          }
-          .resources-title {
-            font-family: 'Fugaz One', cursive;
           }
         `}</style>
     </div>
   );
 };
-export default resources;
+export default donate;
